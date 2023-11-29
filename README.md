@@ -1,9 +1,5 @@
 <div align= "center">
-<<<<<<< HEAD
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=My%20Diary%20Web%20Service&animation=fadeIn&fontColor=000000&fontSize=60" />
-=======
     <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=My%20Diary%20Web%20Service&animation=fadeIn&fontColor=ffffff&fontSize=60" />
->>>>>>> work
 </div>
 <div align= "center"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 나의 일상을 관리하는 웹 서비스 </h2>  
