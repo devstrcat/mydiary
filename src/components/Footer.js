@@ -1,10 +1,11 @@
 import React from "react";
 import { FooterBotBar } from "../styles/footerstyle";
+import { Link } from "react-router-dom";
 
-const Footer = ({ children }) => {
+const Footer = props => {
   return (
     <FooterBotBar>
-      <h3>{children}</h3>
+      <Link to="/home">{props.children}</Link>
     </FooterBotBar>
   );
 };

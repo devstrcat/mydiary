@@ -1,15 +1,23 @@
-import Header from "./components/Header";
+import { Route, Routes } from "react-router";
+import Index from "./pages/Index";
+import Intro from "./pages/Intro";
+import DiaryAdd from "./pages/diary/DiaryAdd";
+import DiaryEdit from "./pages/diary/DiaryEdit";
+import DiaryIndex from "./pages/diary/Index";
 import "./styles/App.css";
-import Footer from "./components/Footer";
-import Main from "./components/Main";
 
 function App() {
   return (
     <div className="layout">
       <div className="wrap">
-        <Header>title</Header>
-        <Main></Main>
-        <Footer>Copyright</Footer>
+        <Routes>
+          <Route path="/" element={<Intro />}></Route>
+          <Route path="/home" element={<Index />}></Route>
+          <Route path="/diary" element={<DiaryIndex />}>
+            <Route path="add" element={<DiaryAdd />}></Route>
+          </Route>
+          <Route path="/diary/edit/:pk" element={<DiaryEdit />}></Route>
+        </Routes>
       </div>
     </div>
   );

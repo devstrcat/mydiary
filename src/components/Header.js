@@ -1,15 +1,15 @@
 import React from "react";
 import { HButton, HTopBar } from "../styles/headerstyle";
 
-const Header = ({ children }) => {
+const Header = props => {
   return (
     <HTopBar>
-      <HButton>
-        <img src="images/bt_list.svg" />
+      <HButton onClick={() => {}}>
+        <img src="/images/bt_list.svg" />
       </HButton>
-      <h2>{children}</h2>
-      <HButton>
-        <img src="images/bt_login.svg" />
+      <h2>{props.children}</h2>
+      <HButton onClick={() => {}}>
+        <img src="/images/bt_login.svg" />
       </HButton>
     </HTopBar>
   );
