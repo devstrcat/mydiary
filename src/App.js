@@ -1,20 +1,14 @@
-import styled from "@emotion/styled";
 import Header from "./components/Header";
 import "./styles/App.css";
 import Footer from "./components/Footer";
-
-const Contents = styled.main`
-  width: 100%;
-  min-height: 500px;
-  background: #fff;
-`;
+import Main from "./components/Main";
 
 function App() {
   return (
     <div className="layout">
       <div className="wrap">
         <Header>title</Header>
-        <Contents>중심 컨텐츠</Contents>
+        <Main></Main>
         <Footer>Copyright</Footer>
       </div>
     </div>
