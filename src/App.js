@@ -13,9 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Intro />}></Route>
           <Route path="/home" element={<Index />}></Route>
-          <Route path="/diary" element={<DiaryIndex />}>
-            <Route path="add" element={<DiaryAdd />}></Route>
-          </Route>
+          <Route path="/diary" element={<DiaryIndex />}></Route>
+          <Route path="/diary/add" element={<DiaryAdd />}></Route>
           <Route path="/diary/edit/:pk" element={<DiaryEdit />}></Route>
         </Routes>
       </div>
